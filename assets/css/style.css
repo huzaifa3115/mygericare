@@ -1217,6 +1217,11 @@ section#about {
   width: 100%;
   text-align: center;
 }
+.providers-detail .member .pic {
+  width: 100%;
+  align-self: center;
+  text-align: inherit;
+}
 
 .doctors .member .pic img {
   border-radius: 100px;
@@ -1234,7 +1239,7 @@ section#about {
 
 .doctors .member .member-info {
   padding-left: 30px;
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
 }
 
