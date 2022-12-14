@@ -177,7 +177,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  /* top: 40px; */
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
@@ -475,7 +475,7 @@ h6 {
   height: 90vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
-  margin-bottom: -200px;
+  /* margin-bottom: -200px; */
 }
 
 #hero .container {
@@ -779,6 +779,10 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
+}
+
+section#about {
+  padding: 0;
 }
 
 .about .icon-box .title a {
@@ -1524,7 +1528,7 @@ section {
 
 .contact .info .email,
 .contact .info .phone {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .contact .info .email:hover i,
@@ -1600,7 +1604,11 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.button-container{
+  margin-top: 3%;  
+}
+
+button, .button {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1609,7 +1617,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+button:hover, .button:hover {
   background: #1c84e3;
 }
 
