@@ -1509,6 +1509,9 @@ section#about {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact-page-content-section{
+  margin-top: 5%;
+}
 .contact .info {
   width: 100%;
   background: #fff;
