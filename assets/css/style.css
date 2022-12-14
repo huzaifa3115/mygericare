@@ -1222,9 +1222,14 @@ section#about {
 }
 
 .doctors .member .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.doctors .member .pic img {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .doctors .member .pic img {
@@ -1237,6 +1242,8 @@ section#about {
 
 .doctors .member .member-info {
   padding-left: 30px;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .doctors .member h4 {
@@ -1245,6 +1252,7 @@ section#about {
   font-size: 20px;
   color: #2c4964;
 }
+
 
 .doctors .member span {
   display: block;
@@ -1262,7 +1270,7 @@ section#about {
   height: 1px;
   background: #b2c8dd;
   bottom: 0;
-  left: 0;
+  left: 40%;
 }
 
 .doctors .member p {
