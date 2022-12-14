@@ -478,6 +478,12 @@ h6 {
   /* margin-bottom: -200px; */
 }
 
+.about-hero {
+  height: 90vh;
+  background: url("../img/about-hero.jpeg") top center no-repeat !important;
+  background-size: cover;
+}
+
 #hero .container {
   position: relative;
 }
@@ -748,6 +754,10 @@ section {
   margin-top: 40px;
 }
 
+.about-hero h1 {
+  color: #fff !important;
+}
+
 .about .icon-box .icon {
   float: left;
   display: flex;
@@ -783,6 +793,13 @@ section {
 
 section#about {
   padding: 0;
+}
+
+@media (max-width: 992px) {
+  .about-hero {
+    height: auto !important;
+    background-size: cover !important;
+  }
 }
 
 .about .icon-box .title a {
@@ -1604,11 +1621,12 @@ section#about {
   padding: 10px 12px;
 }
 
-.button-container{
-  margin-top: 3%;  
+.button-container {
+  margin-top: 3%;
 }
 
-button, .button {
+button,
+.button {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1617,7 +1635,8 @@ button, .button {
   border-radius: 50px;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   background: #1c84e3;
 }
 
