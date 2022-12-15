@@ -221,8 +221,11 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     responsiveClass: true,
-    pagination:true,
-    nav:false,
+    pagination: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
