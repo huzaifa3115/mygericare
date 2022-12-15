@@ -1,10 +1,4 @@
-/**
-* Template Name: Medilab - v4.9.1
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -116,7 +110,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -125,7 +119,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -135,7 +129,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -188,31 +182,32 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
+  // new Swiper('.testimonials-slider', {
+  //   speed: 400,
+  //   spaceBetween: 100,
+  //   // loop: true,
+  //   // autoplay: {
+  //   //   delay: 50000000,
+  //   //   disableOnInteraction: false
+  //   // },
+  //   // slidesPerView: 'auto',
+  //   // pagination: {
+  //   //   el: '.swiper-pagination',
+  //   //   type: 'bullets',
+  //   //   clickable: true
+  //   // },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
 
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      }
-    }
-  });
+  //     1200: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20
+  //     }
+  //   }
+  // });
 
   /**
    * Initiate Pure Counter 
@@ -220,3 +215,25 @@
   new PureCounter();
 
 })()
+
+$(document).ready(function () {
+  $('.testimonial-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    pagination:true,
+    nav:false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+        loop: false
+      }
+    }
+  });
+});
