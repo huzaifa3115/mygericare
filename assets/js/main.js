@@ -224,7 +224,7 @@ $(document).ready(function () {
     pagination: true,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
       0: {
