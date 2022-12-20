@@ -803,7 +803,7 @@ section#about {
 }
 
 .about .video-box {
-  background: url("../img/docs.jpg") center center no-repeat;
+  background: url("../img/heart.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
